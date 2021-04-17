@@ -18,7 +18,7 @@ const BookingForm = () => {
     const onSubmit = data => {
 
 
-        fetch('http://localhost:5000/learnerData', {
+        fetch('https://secure-harbor-26795.herokuapp.com/learnerData', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify( data )

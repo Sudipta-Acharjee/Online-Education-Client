@@ -17,7 +17,7 @@ const AddAdmin = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/addAdmin', {
+        fetch('https://secure-harbor-26795.herokuapp.com/addAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify( data )

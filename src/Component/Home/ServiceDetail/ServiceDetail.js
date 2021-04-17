@@ -8,7 +8,7 @@ const ServiceDetail = ({ service }) => {
     return (
         <div className="col-md-4 text-center ">
             {
-                service.image? <img className="img-fluid mb-3" style={{ height: '250px' }} src={`data:image/png;base64,${service.image.img}`} alt="wait" />: <img className="img-fluid mb-3" src={`http://localhost:5000/${service.img}`} alt=""/>
+                service.image? <img className="img-fluid mb-3" style={{ height: '250px' }} src={`data:image/png;base64,${service.image.img}`} alt="wait" />: <img className="img-fluid mb-3" src={`https://secure-harbor-26795.herokuapp.com/${service.img}`} alt=""/>
             }
             <h5 >{service.course}</h5>
             <h5>$ {service.fee}</h5>

@@ -5,7 +5,7 @@ import SerialData from './SerialData';
 const BookingList = () => {
     const [allBooking, setAllBooking] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/dataGetUser')
+        fetch('https://secure-harbor-26795.herokuapp.com/dataGetUser')
             .then(res => res.json())
             .then(data => setAllBooking(data))
     }, [])

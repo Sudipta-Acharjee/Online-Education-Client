@@ -17,7 +17,7 @@ const customStyles = {
 const LearnerReview = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/reviewData', {
+        fetch('https://secure-harbor-26795.herokuapp.com/reviewData', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

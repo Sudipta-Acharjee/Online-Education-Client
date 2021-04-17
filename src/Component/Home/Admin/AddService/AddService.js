@@ -20,7 +20,7 @@ const AddService = () => {
         formData.append('name', info.Description);
         formData.append('email', info.Title);
 
-        fetch('http://localhost:5000/addAService', {
+        fetch('https://secure-harbor-26795.herokuapp.com/addAService', {
             method: 'POST',
             body: formData
         })

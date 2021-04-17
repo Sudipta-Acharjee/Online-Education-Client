@@ -10,7 +10,7 @@ const Service = () => {
         setCourseName(name)
     }
     useEffect( () => {
-        fetch('http://localhost:5000/service')
+        fetch('https://secure-harbor-26795.herokuapp.com/service')
         .then(res => res.json())
         .then(data => setServices(data))
     }, [])

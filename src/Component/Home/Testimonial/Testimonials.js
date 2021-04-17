@@ -6,7 +6,7 @@ import Testomonial from './Testomonial';
 const Testimonials = () => {
     const [allReview, setAllReview] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/reviewGetUser')
+        fetch('https://secure-harbor-26795.herokuapp.com/reviewGetUser')
             .then(res => res.json())
             .then(data => setAllReview(data))
     }, [])
