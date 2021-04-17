@@ -1,3 +1,4 @@
+import { faAlignCenter } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import Sidebar from '../../../Learner/LearnerBook/Sidebar/Sidebar';
 
@@ -17,22 +18,24 @@ const AddService = () => {
     const handleSubmit = () => {
         const formData = new FormData()
         formData.append('file', file);
-        formData.append('name', info.Description);
-        formData.append('email', info.Title);
+        formData.append('name', info.description);
+        formData.append('email', info.title);
 
         fetch('https://secure-harbor-26795.herokuapp.com/addAService', {
             method: 'POST',
             body: formData
         })
             .then(response => response.json())
-            .then(data => {
-                console.log(data)
+            .then(success => {
+                if (success) {
+                    faAlignCenter('Add Service Successfully');
+                }
             })
             .catch(error => {
                 console.error(error)
             })
     }
-    
+
     return (
         <div className="row">
             <div className="col-md-3">
