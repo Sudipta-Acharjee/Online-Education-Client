@@ -1,0 +1,9 @@
+.info-card {
+  height: 200px;
+  background-color:lightpink;
+  color: black;
+  margin-top: 20px;
+  padding-top: 80px;
+  border-radius: 10px;
+  border: 1px solid green;
+}
