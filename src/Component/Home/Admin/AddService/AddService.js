@@ -28,7 +28,7 @@ const AddService = () => {
             .then(response => response.json())
             .then(success => {
                 if (success) {
-                    faAlignCenter('Add Service Successfully');
+                    alert('Add Service Successfully');
                 }
             })
             .catch(error => {
