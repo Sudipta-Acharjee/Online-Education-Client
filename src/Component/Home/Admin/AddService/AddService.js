@@ -18,8 +18,8 @@ const AddService = () => {
     const handleSubmit = () => {
         const formData = new FormData()
         formData.append('file', file);
-        formData.append('name', info.description);
-        formData.append('email', info.title);
+        formData.append('Description', info.Description);
+        formData.append('Title', info.Title);
 
         fetch('https://secure-harbor-26795.herokuapp.com/addAService', {
             method: 'POST',
@@ -46,8 +46,8 @@ const AddService = () => {
                 <form onSubmit={handleSubmit}>
                     <div class="form-group">
                         <label for="exampleInputTitle">Service Title</label>
-                        <input type="text"
-                            onBlur={handleBlur}
+                        <input onBlur={handleBlur} type="text"
+
                             class="form-control"
                             name="Title"
                             placeholder="Service Title" />

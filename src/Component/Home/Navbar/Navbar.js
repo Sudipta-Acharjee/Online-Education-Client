@@ -21,9 +21,6 @@ const Navbar = () => {
                             <a class="nav-link ms-5 " href="/admin/addAdmin">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ms-5 " href="#">Contuct Us</a>
-                        </li>
-                        <li class="nav-item">
                             <Link to="/login"><button class="nav-link ms-5" >Log In</button></Link>
                         </li>
                     </ul>

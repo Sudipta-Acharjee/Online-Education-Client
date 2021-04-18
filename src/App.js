@@ -43,9 +43,9 @@ function App() {
           <PrivateRoute path="/admin/order">
             <OrderListAdmin></OrderListAdmin>
           </PrivateRoute>
-          <PrivateRoute path="/admin/addService">
+          <Route path="/admin/addService">
             <AddService></AddService>
-          </PrivateRoute>
+          </Route>
           <PrivateRoute path="/admin/addAdmin">
             <AddAdmin></AddAdmin>
           </PrivateRoute>
